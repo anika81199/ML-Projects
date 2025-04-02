@@ -1,0 +1,30 @@
+# System files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+ml_env/
+
+# Dataset (excluded as requested)
+dataset/
+
+# Temporary files from streamlit_detector.py
+temp_uploaded_img.jpg
+frame.jpg
+
+# Output files from streamlit_detector.py & testing
+detected.jpeg
+output_video.mp4
+output_video_converted.mp4
+
+# YOLOv5 detection output directory
+yolov5/runs/detect/
+
+# Exclude all training runs except the specific one containing the desired model
+yolov5/runs/train/*
+!yolov5/runs/train/exp4/
+!yolov5/runs/train/exp4/weights/
+!yolov5/runs/train/exp4/weights/best.pt

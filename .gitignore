@@ -1,0 +1,33 @@
+# Ignore files within the Helmet detection subdirectory
+
+# System files
+Helmet detection/.DS_Store
+Helmet detection/**/.DS_Store
+
+# Python cache
+Helmet detection/**/__pycache__/
+Helmet detection/**/*.pyc
+
+# Virtual environment
+Helmet detection/ml_env/
+
+# Dataset (excluded as requested)
+Helmet detection/dataset/
+
+# Temporary files from streamlit_detector.py
+Helmet detection/temp_uploaded_img.jpg
+Helmet detection/frame.jpg
+
+# Output files from streamlit_detector.py & testing
+Helmet detection/detected.jpeg
+Helmet detection/output_video.mp4
+Helmet detection/output_video_converted.mp4
+
+# YOLOv5 detection output directory
+Helmet detection/yolov5/runs/detect/
+
+# Exclude all training runs except the specific one containing the desired model
+Helmet detection/yolov5/runs/train/*
+!Helmet detection/yolov5/runs/train/exp4/
+!Helmet detection/yolov5/runs/train/exp4/weights/
+!Helmet detection/yolov5/runs/train/exp4/weights/best.pt

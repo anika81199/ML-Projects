@@ -1,0 +1,6 @@
+names:
+- helmet
+- no_helmet
+nc: 2
+train: /Users/anikashrivastava/codes/Helmet detection/dataset/images/train
+val: /Users/anikashrivastava/codes/Helmet detection/dataset/images/val
