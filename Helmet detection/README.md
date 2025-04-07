@@ -10,6 +10,20 @@ This project uses YOLOv5 to detect whether people in images or videos are wearin
 *   Includes a script to split the dataset into training and validation sets.
 *   Offers a Streamlit web interface for easy detection.
 
+## Example Detection
+
+Here's an example of the model detecting helmets on a test image:
+
+**Original Image (`test_image.jpeg`)**
+
+![Original Test Image](test_image.jpeg)
+
+**Detected Image (`detected.jpeg`)**
+
+![Detected Helmets](detected.jpeg)
+
+*(Note: Ensure `detected.jpeg` is present in the `Helmet detection` directory to see the result here.)*
+
 ## Project Structure
 
 ```
@@ -32,7 +46,7 @@ Helmet detection/
 ├── creating_yaml.py       # Creates data.yaml for YOLOv5
 ├── data.yaml              # Dataset configuration (generated)
 ├── split_train_val.py     # Splits data into train/val sets
-├── app.py  # Streamlit web application
+├── streamlit_detector.py  # Streamlit web application
 └── README.md              # This file
 ```
 
@@ -106,9 +120,9 @@ python yolov5/detect.py --weights yolov5/runs/train/helmet_detection_exp<X>/weig
 
 ### Using Streamlit Web App
 
-1.  **Update Model Path:** Open `Helmet detection/app.py` and ensure the `MODEL_PATH` variable points to your specific `best.pt` file (e.g., `MODEL_PATH = Path("yolov5/runs/train/helmet_detection_exp<X>/weights/best.pt").resolve()`). Replace `<X>` with your experiment number.
+1.  **Update Model Path:** Open `Helmet detection/streamlit_detector.py` and ensure the `MODEL_PATH` variable points to your specific `best.pt` file (e.g., `MODEL_PATH = Path("yolov5/runs/train/helmet_detection_exp<X>/weights/best.pt").resolve()`). Replace `<X>` with your experiment number.
 2.  **Run the app:** Run this command from the main `Helmet detection` directory.
     ```bash
-    streamlit run "Helmet detection/app.py"
+    streamlit run "Helmet detection/streamlit_detector.py"
     ```
 3.  Open the provided URL in your web browser and upload an image or video.
