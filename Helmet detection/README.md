@@ -46,7 +46,7 @@ Helmet detection/
 ├── creating_yaml.py       # Creates data.yaml for YOLOv5
 ├── data.yaml              # Dataset configuration (generated)
 ├── split_train_val.py     # Splits data into train/val sets
-├── streamlit_detector.py  # Streamlit web application
+├── app.py  # Streamlit web application
 └── README.md              # This file
 ```
 
