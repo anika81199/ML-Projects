@@ -2,4 +2,5 @@
 
 - Driver's Drowsiness Detection System
 - Helmet-detection System
-- Advanced Visualizations 
+- Advanced Visualizations
+- Stock Price prediction
