@@ -120,9 +120,9 @@ python yolov5/detect.py --weights yolov5/runs/train/helmet_detection_exp<X>/weig
 
 ### Using Streamlit Web App
 
-1.  **Update Model Path:** Open `Helmet detection/streamlit_detector.py` and ensure the `MODEL_PATH` variable points to your specific `best.pt` file (e.g., `MODEL_PATH = Path("yolov5/runs/train/helmet_detection_exp<X>/weights/best.pt").resolve()`). Replace `<X>` with your experiment number.
+1.  **Update Model Path:** Open `Helmet detection/app.py` and ensure the `MODEL_PATH` variable points to your specific `best.pt` file (e.g., `MODEL_PATH = Path("yolov5/runs/train/helmet_detection_exp<X>/weights/best.pt").resolve()`). Replace `<X>` with your experiment number.
 2.  **Run the app:** Run this command from the main `Helmet detection` directory.
     ```bash
-    streamlit run "Helmet detection/streamlit_detector.py"
+    streamlit run "Helmet detection/app.py"
     ```
 3.  Open the provided URL in your web browser and upload an image or video.
