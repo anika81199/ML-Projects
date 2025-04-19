@@ -1,5 +1,8 @@
 # Email Marketing Campaign Optimization Analysis
 
+# Direct colab link:
+https://colab.research.google.com/drive/1PQqrXMz44VnauMQduZXn3DzXu_QSFw-7?usp=sharing
+
 ## Introduction
 
 This project analyzes the performance of an email marketing campaign for an e-commerce site. The goal was to understand user engagement (opens and clicks) and build a predictive model to optimize future campaigns by maximizing the probability of users clicking the link within the email.
