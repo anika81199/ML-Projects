@@ -1,6 +1,6 @@
 # Email Marketing Campaign Optimization Analysis
 
-# Direct colab link:
+## Direct colab link:
 https://colab.research.google.com/drive/1PQqrXMz44VnauMQduZXn3DzXu_QSFw-7?usp=sharing
 
 ## Introduction
